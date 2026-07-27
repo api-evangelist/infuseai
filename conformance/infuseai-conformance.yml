@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://trust.reccehq.com/
+note: >-
+  Recce (InfuseAI) publishes a SOC 2 compliance posture via its trust center and
+  states SOC 2 compliance on the product site and llms.txt. No public REST OpenAPI
+  is published, so cross-cutting API standards are asserted only where evidenced.
+standards:
+  - id: soc2
+    conforms: true
+    evidence: >-
+      Trust center at https://trust.reccehq.com/ and product site state the Recce
+      Cloud platform is SOC 2 compliant.
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      Recce Cloud (cloud.reccehq.com) is an OIDC/OAuth2-protected application
+      (well-known/openid-configuration path present on the app host).
+  - id: rfc9457-problem-details
+    conforms: false
+  - id: fhir-r4
+    conforms: false
+  - id: fapi
+    conforms: false

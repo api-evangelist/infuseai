@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/recce/
+note: >-
+  InfuseAI's product is Recce, an open-source data-review agent/CLI for dbt teams,
+  distributed as first-party Python packages. Recce is the application itself
+  (CLI + local server), not a client SDK for a remote REST API, so no SDKs pointer
+  is emitted. GitHub org remains InfuseAI (github.com/InfuseAI/recce).
+packages:
+  - language: python
+    registry: pypi
+    name: recce
+    url: https://pypi.org/project/recce/
+    install: pip install -U recce
+    version: 1.56.0
+    license: Apache-2.0
+    source_code: https://github.com/DataRecce/recce
+    official: true
+    description: Environment diff / data-review tool for dbt (local CLI + server).
+  - language: python
+    registry: pypi
+    name: recce-cloud
+    url: https://pypi.org/project/recce-cloud/
+    install: pip install -U recce-cloud
+    version: 1.56.0
+    license: Apache-2.0
+    official: true
+    description: Lightweight CLI for Recce Cloud operations (upload dbt artifacts in CI/CD).

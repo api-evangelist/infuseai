@@ -1,7 +1,16 @@
 aid: infuseai
 name: InfuseAI
-description: InfuseAI is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  InfuseAI is the company behind Recce, an open-source AI data-review agent for dbt
+  teams. Recce validates how code changes impact data by automatically running schema
+  diffs, data diffs, row counts, profile/value/histogram diffs, and downstream
+  column-level lineage / impact analysis on pull requests, so data teams catch
+  breaking changes before they reach production. It ships as a first-party Python CLI
+  (recce) plus a managed cloud platform (Recce Cloud) that adds an AI agent to explain
+  findings, collaboration on PR reviews, and CI/CD integration. Recce is Apache-2.0
+  licensed and SOC 2 compliant. InfuseAI, a 500 Global portfolio company, originally
+  built the PrimeHub MLOps platform before focusing on Recce; the product now lives at
+  reccehq.com while the GitHub org remains InfuseAI.
 url: https://raw.githubusercontent.com/api-evangelist/infuseai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,32 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://reccehq.com/assets/images/recce-og-image.avif
 tags:
 - Company
+- Data
+- Data Quality
+- Data Engineering
+- dbt
+- MLOps
+- Analytics Engineering
+- Developer Tools
+- Open Source
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/infuseai-vulnerability-disclosure.yml
+- type: Security
+  url: https://reccehq.com/security/
+- type: DomainSecurity
+  url: security/infuseai-domain-security.yml
 - type: Website
-  url: https://infuseai.io
+  url: https://reccehq.com
+- type: DeveloperPortal
+  url: https://docs.reccehq.com/
+- type: Documentation
+  url: https://docs.reccehq.com/
+- type: Blog
+  url: https://blog.reccehq.com
+- type: GitHubOrganization
+  url: https://github.com/DataRecce/recce
+- type: Pricing
+  url: https://reccehq.com/pricing/
+- type: SignUp
+  url: https://cloud.reccehq.com
+- type: Login
+  url: https://cloud.reccehq.com
+- type: TermsOfService
+  url: https://reccehq.com/statements/terms-of-use
+- type: PrivacyPolicy
+  url: https://reccehq.com/statements/privacy-policy
+- type: Sandbox
+  url: https://reccehq.com/demo/
+- type: TrustCenter
+  url: https://trust.reccehq.com/
+  x-artifact: security/infuseai-trust-center.yml
+- type: Compliance
+  url: https://trust.reccehq.com/
+  x-artifact: conformance/infuseai-conformance.yml
+- type: Conformance
+  url: conformance/infuseai-conformance.yml
+- type: Packages
+  url: packages/infuseai-packages.yml
+- type: CLI
+  url: cli/infuseai-cli.yml
+- type: ChangeLog
+  url: changelog/infuseai-changelog.yml
+- type: LLMsTxt
+  url: llms/infuseai-llms.txt
+- type: Lifecycle
+  url: lifecycle/infuseai-lifecycle.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

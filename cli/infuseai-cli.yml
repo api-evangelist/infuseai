@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.reccehq.com/
+note: >-
+  Recce ships a first-party CLI (the `recce` Python package) plus a lightweight
+  `recce-cloud` CLI for CI/CD. Binaries are catalogued in packages/.
+cli:
+  name: recce
+  language: python
+  license: Apache-2.0
+  repo: https://github.com/DataRecce/recce
+  docs: https://docs.reccehq.com/
+  install:
+    - method: pip
+      command: pip install -U recce
+    - method: pip
+      command: pip install -U recce-cloud
+  commands:
+    - name: recce server
+      description: Launch the local Recce web instance to review dbt environment diffs.
+    - name: recce run
+      description: Run configured Recce checks headlessly (CI/CD), producing a state file.
+    - name: recce-cloud upload
+      description: Upload dbt artifacts / Recce state to Recce Cloud for team workflows.
+  flows:
+    - name: local-review
+      steps: [recce server]
+      description: Interactively diff a dbt dev branch against production before opening a PR.
+    - name: ci-validation
+      steps: [recce run, recce-cloud upload]
+      description: Run Recce checks in CI and publish results to Recce Cloud for PR review.

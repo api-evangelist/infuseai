@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: https://reccehq.com/changelog/
+note: >-
+  Recce publishes a dated changelog (with RSS) and tags every release on GitHub.
+  Versioning is semantic; the recent window below is drawn from GitHub releases
+  of DataRecce/recce.
+changelog_url: https://reccehq.com/changelog/
+rss: https://reccehq.com/changelog/rss.xml
+releases_url: https://github.com/DataRecce/recce/releases
+scheme: semver
+current_version: 1.56.0
+entries:
+  - version: v1.56.0
+    date: '2026-07-15'
+  - version: v1.54.1
+    date: '2026-06-25'
+  - version: v1.54.0
+    date: '2026-06-24'
+  - version: v1.53.1
+    date: '2026-06-17'
+  - version: v1.53.0
+    date: '2026-06-17'
+  - version: v1.52.0
+    date: '2026-06-10'
+  - version: v1.51.0
+    date: '2026-06-03'
+  - version: v1.50.1
+    date: '2026-06-01'

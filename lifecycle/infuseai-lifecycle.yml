@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://reccehq.com/changelog/
+note: >-
+  Recce is an open-source (Apache-2.0) tool released as semantically-versioned
+  PyPI packages with a public dated changelog. No public API status page was
+  found (status.reccehq.com did not resolve) and no formal deprecation policy is
+  published, so neither a StatusPage nor Deprecation pointer is emitted.
+versioning:
+  scheme: semver
+  current: 1.56.0
+  docs: https://reccehq.com/changelog/
+  releases: https://github.com/DataRecce/recce/releases
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla:
+  url: null
+status_page: null

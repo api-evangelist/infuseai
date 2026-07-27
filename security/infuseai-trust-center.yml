@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+probe: false
+source: https://trust.reccehq.com/
+url: https://trust.reccehq.com/
+security_page: https://reccehq.com/security/
+certifications:
+  - SOC 2
+evidence:
+  - source: https://trust.reccehq.com/
+    kind: trust-center
+    note: Recce Trust Center (HTTP 200).
+  - source: https://reccehq.com/
+    kind: product-site
+    note: Landing page states "SOC 2 compliant cloud platform".
+  - source: https://datarecce.io/llms.txt
+    kind: llms.txt
+    note: Product llms.txt links a Security/compliance section.
