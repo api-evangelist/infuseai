@@ -1,0 +1,46 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://reccehq.com/pricing/
+sources:
+- https://reccehq.com/pricing/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: open-core
+  method: page
+  read: '2026-10-07'
+  evidence: Don't need an AI Agent or Collaboration Features? Try our open source .
+  free_edition: open source
+  managed_tier: Team Plan
+published: true
+note: Monthly/yearly toggle; $250/month when paid annually, $300 monthly. Open source version mentioned
+  without license name.
+plan_count: 3
+currency: USD
+plans:
+- name: Free plan
+  price_text: $0
+  price: 0
+  currency: USD
+  period: month
+  included_quota: 10 customized preset checks, 100 agent reviews per month, automated CI validation &
+    PR comments, community support
+- name: Team Plan
+  price_text: $300 $250 /month
+  currency: USD
+  period: month
+  included_quota: Unlimited customized preset checks, 1,000 agent reviews per month, shared team checklists,
+    unlimited seats, 48hr email support SLA
+- name: Enterprise Plan
+  price_text: Contact us
+  period: none
+  included_quota: Everything in Team Plan plus SSO, BYOC, RBAC, dedicated support, custom limits and volume
+    pricing
+rate_limit_statements:
+- 100 agent reviews per month
+- 1,000 agent reviews per month
